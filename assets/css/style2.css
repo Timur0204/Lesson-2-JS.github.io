@@ -1,0 +1,50 @@
+   
+       h2 {
+        justify-content: center;
+       }
+
+       .homework_2 {
+        text-decoration: none;
+        color: #fff;
+        background-color: chocolate;
+        padding: 10px;
+        min-width: 15vw;
+        justify-content: center;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid black;
+        border-radius: 5px;
+    } 
+
+    .a_href {
+        display: flex;
+    }
+
+    #resultNumber,
+    #userNumber {
+        width: 100%;
+    }
+   
+   @media(min-width: 1024px) {
+    .homework_2:hover {
+        background-color: rgb(156, 77, 21);
+        color: whitesmoke;
+    }
+
+    #resultNumber,
+    #userNumber {
+        width: 70%;
+    }
+
+    main, footer {
+        display: flex;
+    }
+
+    #userNumber {
+        margin-left: 50px;
+    }
+
+    #resultNumber {
+        margin-left: 87px;
+    }
+}

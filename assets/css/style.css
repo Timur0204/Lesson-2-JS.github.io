@@ -32,6 +32,8 @@
 
         .main {
             display: flex;
+            width: 70vw;
+            max-width: 70vw;
         }
 
         .rest {
@@ -43,7 +45,35 @@
             color: whitesmoke;
         }
 
-        #result {
-            margin-left: 115px;
+        .p {
+            padding-right: 120px;
         }
+
+        .homework_2 {
+            max-width: 15vw;
+        }
+
+        .homework_2:hover {
+            background-color: rgb(156, 77, 21);
+            color: whitesmoke;
+        }
+    }
+
+
+    .homework_2 {
+        text-decoration: none;
+        color: #fff;
+        background-color: chocolate;
+        padding: 10px;
+        width: 40vw;
+        justify-content: center;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .a_href {
+        display: flex;
+        justify-content: center;
     }
