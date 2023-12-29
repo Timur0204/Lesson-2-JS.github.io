@@ -29,7 +29,7 @@
         result += units[unitsDigit];
     }
 
-    if (userNumber >= 1 && userNumber <= 4) {
+    if (userNumber > 1 && userNumber <= 4) {
         result += ' гривні';
     } else if (userNumber >= 5 && userNumber <= 20) {
         result += ' гривень';
@@ -39,6 +39,8 @@
             result += ' гривень';
         } else if (lastDigit >= 2 && lastDigit <= 4) {
             result += ' гривні';
+        } else if(userNumber == 1) {
+            result += ' гривня'
         } else {
             result += ' гривня';
         }
