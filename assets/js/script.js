@@ -41,6 +41,9 @@
             result += ' гривні';
         } else if(userNumber == 1) {
             result += ' гривня'
+        } else if (userNumber(isNaN) || userNumber == "") {
+            resultNumber.value = 'Введіть коректну суму';
+            return; 
         } else {
             result += ' гривня';
         }
