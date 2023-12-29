@@ -18,20 +18,29 @@
         result += hundreds[hundredsDigit] + ' ';
     }
 
-    if (tensDigit > 1) {
+    if (tensDigit >= 2) {
         result += tensPartTwo[tensDigit] + ' ';
         if (unitsDigit > 0) {
-            result += units[unitsDigit];
+            result += unitsAlternativ[unitsDigit];
         }
     } else if (tensDigit === 1) {
         result += tens[userNumber % 100 - 10];
     } else if (unitsDigit > 0) {
-        if (userNumber === 1) {
-            result += 'одна гривна';
-        } else if (userNumber >= 2 && userNumber <= 4) {
-            result += unitsAlternativ[unitsDigit] + ' гривны';
+        result += units[unitsDigit];
+    }
+
+    if (userNumber >= 1 && userNumber <= 4) {
+        result += ' гривні';
+    } else if (userNumber >= 5 && userNumber <= 20) {
+        result += ' гривень';
+    } else {
+        let lastDigit = userNumber % 10;
+        if (lastDigit >= 5 || lastDigit === 0) {
+            result += ' гривень';
+        } else if (lastDigit >= 2 && lastDigit <= 4) {
+            result += ' гривні';
         } else {
-            result += units[unitsDigit] + ' гривен';
+            result += ' гривня';
         }
     }
 
