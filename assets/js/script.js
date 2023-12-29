@@ -11,7 +11,7 @@
 
     let result = '';
     let hundredsDigit = Math.floor(userNumber / 100);
-    let tensDigit = Math.round((userNumber % 100) / 10);
+    let tensDigit = Math.floor((userNumber % 100) / 10);
     let unitsDigit = userNumber % 10;
 
     if (hundredsDigit > 0) {

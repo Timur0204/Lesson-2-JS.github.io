@@ -1,6 +1,6 @@
    
     function icao() {
-        let combination = document.querySelector("#userCombo").value;
+        let combination = document.querySelector("#userCombo").value.toUpperCase();
         let result = document.querySelector("#result");
 
     const alphabet = {
