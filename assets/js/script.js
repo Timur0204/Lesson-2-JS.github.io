@@ -4,7 +4,7 @@
     let resultNumber = document.querySelector('#resultNumber');
 
     const units = ['', 'одна', 'дві', 'три', 'чотири', 'пять', 'шість', 'сім', 'вісім', 'девять'];
-    const unitsAlternativ = ['', 'один', 'два', 'три', 'чотири', 'пять', 'шість', 'сім', 'вісім', 'девять'];
+    const unitsAlternativ = ['', 'одна', 'дві', 'три', 'чотири', 'пять', 'шість', 'сім', 'вісім', 'девять'];
     const tens = ['десять', 'одинадцять', 'дванадцять', 'тринадцять', 'чотирнадцять', 'пятнадцять', 'шістнадцять', 'сімнадцять', 'вісімнадцять', 'девятнадцять'];
     const tensPartTwo = ['', '', 'двадцять', 'тридцять', 'сорок', 'пятдесят', 'шістдесят', 'сімдесят', 'вісімдесят', 'девяносто'];
     const hundreds = ['', 'сто', 'двісті', 'триста', 'чотириста', 'пятсот', 'шістсот', 'сімсот', 'вісімсот', 'девятсот'];
@@ -34,10 +34,10 @@
     } else if (userNumber >= 5 && userNumber <= 20) {
         result += ' гривень';
     } else {
-        let lastDigit = userNumber % 10;
-        if (lastDigit >= 5 || lastDigit === 0) {
+        let prelastDigit = userNumber % 10;
+        if (prelastDigit >= 5 || prelastDigit === 0) {
             result += ' гривень';
-        } else if (lastDigit >= 2 && lastDigit <= 4) {
+        } else if (prelastDigit >= 2 && prelastDigit <= 4 ) {
             result += ' гривні';
         } else if(userNumber == 1) {
             result += ' гривня'
